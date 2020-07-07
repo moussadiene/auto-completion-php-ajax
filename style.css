@@ -1,0 +1,112 @@
+
+/** Mes Outils pour le css **/
+
+body{
+    background-color: bisque;
+    font-size: 25px;
+}
+
+.group{
+    margin: 20px;
+}
+
+/** souma sokhla wé flex **/
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/** pour l'aligne des ecritures**/
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+/** pour l'aligne des flex**/
+.flex-center{
+    justify-content: center;
+}
+.bg-blue{
+    background-color: rgb(126, 126, 167);
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: white;
+}
+
+.flex-right{
+    justify-content: right;
+}
+
+.flex-left{
+    justify-content: left;
+}
+.flex-round{
+    justify-content: space-around;
+}
+.flex-row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/** pour l'aligne des items **/
+.item-center{
+    align-items: center;
+}
+
+.item-right{
+    align-items: right;
+}
+
+.item-left{
+    align-items: left;
+}
+.plus-grand{
+    flex:1;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.input{
+    width: 300px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    outline: none;
+}
+label{
+    font-size: 20px;
+}
+.marge{
+    margin: 50px;
+}
+.button{
+    float: right;
+    margin-right: 20px;
+}
+#valider{
+    font-size: 20px;
+    padding: 2px 20px;
+    background-color: rgb(55, 184, 37);
+    border-radius: 10px;
+}
+
+.field{
+    margin-left: 20px;
+}
+
+fieldset{
+    border-radius: 10px;
+}
+img{
+    border-radius: 20px;
+    width: 100px;
+}
