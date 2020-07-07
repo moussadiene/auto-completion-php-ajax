@@ -34,12 +34,6 @@ body{
 .flex-center{
     justify-content: center;
 }
-.bg-blue{
-    background-color: rgb(126, 126, 167);
-    border-radius: 10px;
-    padding: 10px 0px;
-    color: white;
-}
 
 .flex-right{
     justify-content: right;
@@ -109,4 +103,15 @@ fieldset{
 img{
     border-radius: 20px;
     width: 100px;
+}
+.bg-blue{
+    background-color: rgb(126, 126, 167);
+}
+.bg-red{
+    background-color: red;
+}
+.bg-red,.bg-blue{
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: white;
 }

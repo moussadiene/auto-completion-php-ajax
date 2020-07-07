@@ -24,7 +24,7 @@ function searchValid() {
 
             const element = ok.children;
             for(var i = 0; i < element.length ; i++){
-                if(search == element[i].value && element[i].value !=''){
+                if(search == element[i].value){
                     document.getElementById('info').style.display = "block";
 
                 }else{

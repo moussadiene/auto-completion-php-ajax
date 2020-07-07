@@ -4,10 +4,20 @@
 
      extract($_POST);
      if(isset($prenom)){
-          $rep = insert($cni,$prenom,$nom,$age);
-          if($rep!=null){
-               echo '<p id="notif" class="bg-blue"> Personne ajouter avec succes</p>';
+          $ok = false;
+          $rep = searchPersonne($cni);
+          while($row = $rep->fetch()){
+              if($row['cni']){
+                    $ok = true;
+              }
           }
+          if(!$ok){
+               $rep = insert($cni,$prenom,$nom,$age);
+               echo '<p id="notif" class="bg-blue"> Personne ajouter avec succes</p>';
+          }else{
+               echo '<p id="notif" class="bg-red"> Le CNI existe deja </p>';
+          }
+
      }
 
      if(isset($seachPersonne)){
